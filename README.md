@@ -51,11 +51,11 @@ ii. ‘mapsService’: Handles external API (Google Maps)
 Internal REST calls between services.
 
 3.	 Stack: 
-•	Backend         : Java 17, Spring Boot 
-•	Build Tool      : Maven
-•	REST Client   : Rest Template
-•	API Docs        : Springdoc (Swagger)
-•	External APIs : Google Maps Geocoding + Places API
+i. Backend         : Java 17, Spring Boot 
+ii. Build Tool      : Maven
+iii. REST Client   : Rest Template
+iv. API Docs        : Springdoc (Swagger)
+v. External APIs : Google Maps Geocoding + Places API
 
 4.	API Endpoints:
 
@@ -65,8 +65,8 @@ Endpoint and it’s Description:
 
 2.	‘mapsService’ (‘localhost:8081’)
  Endpoint  and it’s Description:
- ‘/api/maps/coordinates?zip={ZIP code}’  Get coordinates
- ‘/api/maps/places?lat=..&lng=..’   Get banks nearby
+ ‘/api/maps/coordinates?zip={ZIP code}’ This retuens coordinates
+ ‘/api/maps/places?lat=..&lng=..’  This returns banks nearby
 
 
 Data Flow
