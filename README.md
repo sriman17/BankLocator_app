@@ -14,8 +14,8 @@ Key Features:
 3.	Nearby banks are listed based on the location.
 
 User Flow:
-1.	User provides a ZIP code via the ‘/api/banks/76207’ endpoint.
-2.	bankService sends the 76207 ZIP code to mapsService.
+1.	User provides a ZIP code via the ‘/api/banks/{ZIP}’ endpoint.
+2.	bankService sends the ZIP code to mapsService.
 3.	mapsService calls the Google Maps API to:
    i. Get geolocation (latitude/longitude)
    ii. Get nearby banks using Places API
@@ -61,11 +61,11 @@ Internal REST calls between services.
 
 1.	‘bankService’ (‘localhost:8080’)
 Endpoint and it’s Description:
- ‘/api/banks/76207’     Returns list of nearby banks for a 76207 ZIP code .
+ ‘/api/banks/76207’     Returns list of nearby banks for a ZIP code .
 
 2.	‘mapsService’ (‘localhost:8081’)
  Endpoint  and it’s Description:
- ‘/api/maps/coordinates?zip=76207’  Get coordinates
+ ‘/api/maps/coordinates?zip={ZIP code}’  Get coordinates
  ‘/api/maps/places?lat=..&lng=..’   Get banks nearby
 
 
