@@ -27,9 +27,9 @@ Business Goals:
 3.	Ready for deployment across multiple regions
 
 
-User  Enters ZIP code.
-Bank Service  Front-facing REST service.
-Maps Service  Handles geolocation and places lookup.
+User Enters ZIP code.
+1. Bank Service --> Front-facing REST service.
+2. Maps Service --> Handles geolocation and places lookup.
 
 
 
@@ -44,8 +44,8 @@ Technical Documentation:
 Architecture Overview:
 
 1. Microservices:
-1.	‘bankService’: User-facing REST API
-2.	‘mapsService’: Handles external API (Google Maps)
+	i. ‘bankService’: User-facing REST API
+ii. ‘mapsService’: Handles external API (Google Maps)
 
 2.	Communication:
 Internal REST calls between services.
